@@ -43,7 +43,6 @@ def main(argv=sys.argv):
     for i in range(count):
         time = get_time_spent(argv[1])
         times.append((int(time[0]) * 60) + float(time[2:7]))
-        print(times)
     print(f"average time taken: {round(calculate_average(times), dec_points)} seconds")
 
 
